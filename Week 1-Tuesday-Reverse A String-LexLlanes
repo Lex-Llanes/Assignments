@@ -1,0 +1,28 @@
+// Reverse the provided string.
+// Your result must be a string.
+//TEST Cases
+// reverseString("hello") ---> "olleh"
+// reverseString("Howdy") ---> "ydwoH"
+// reverseString("Greetings from Techtonica") ---> "acinothceT morf sgniteerG"
+
+// Bonus points
+// Can you think about edge cases? 
+
+
+
+let stringHello = "Hello";
+let stringHowdy = "Howdy";
+let stringGreeting = "Greetings from Techtonica";
+
+function stringReverser(stringVal){
+  reversedString = "";
+  for(let i = stringVal.length - 1; i >= 0; i--){
+    reversedString += stringVal[i];
+  }
+  return reversedString;
+}
+
+console.log(stringReverser(stringHello));
+console.log(stringReverser(stringHowdy));
+console.log(stringReverser(stringGreeting));
+
