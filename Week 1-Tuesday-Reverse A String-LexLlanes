@@ -26,3 +26,4 @@ console.log(stringReverser(stringHello));
 console.log(stringReverser(stringHowdy));
 console.log(stringReverser(stringGreeting));
 
+//If any other data types other than strings are passed such as booleans or integers.
