@@ -1,3 +1,110 @@
-.navigation {
-    color: blue;
-}
+
+
+
+
+.title {
+    font-family:papyrus;
+  }
+  
+  
+  
+  
+  
+  
+  /*------------------------------------------*/
+  /*Navigation Styling Below*/
+  
+  
+  .navigation {
+    border-style:solid;
+    border-width:1px;
+    border-color:red;
+  }
+  
+  
+  /*Navigation Styling Above*/
+  /********************************************/
+  
+  
+  
+  
+  
+  
+  
+  /*------------------------------------------*/
+  /*Ingredients Styling Below*/
+  
+  .ingredients {
+    border-style:solid;
+    border-width:1px;
+    border-color:red;
+  
+  }
+  
+  /*Ingredients Styling Above
+  /********************************************/
+  
+  
+  
+  
+  
+  
+  
+  /*------------------------------------------*/
+  /*Intructions Styling Below*/
+  
+  .instructions {
+    border-style:solid;
+    border-width:1px;
+    border-color:red;
+  }
+  
+  /*Intruction Styling Above
+  /********************************************/
+  
+  
+  
+  
+  
+  
+  
+  /*------------------------------------------*/
+  /*Intructions Styling Below*/
+  
+  .links {
+    border-style:solid;
+    border-width:5px;
+    border-color:blue;
+  }
+  
+  /*Intruction Styling Above
+  /********************************************/
+  
+  
+  
+  
+  
+  
+  /*------------------------------------------*/
+  /*Timer Styling Below*/
+  
+  .timer{
+    border-style:dashed;
+    border-width:3px;
+    border-color:red;
+  
+  }
+  
+  
+  button {
+    font-size:40px;
+    background-color:blue;
+    color:white;
+  }
+  #count{
+     margin-left:20px;
+     font-size:30px;
+     color:black;
+  }
+  /*Timer Styling Above
+  /********************************************/

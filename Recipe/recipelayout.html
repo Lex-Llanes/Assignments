@@ -4,39 +4,38 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>replit</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet" />
   </head>
 
-  <body>
-    <div>
-    <script src="script.js"></script>
-    </div>
-
-
+  <body class="webfont">
+ 
 
 
     
-    <!--This will be the Top Of Page-->
-    <div>
+    <!-----This will be the Top Of Page----->
+    <div class="title">
         <h1>Best Oatmeal Recipe</h1>
         <h1>JUST BUY IT FROM STARBUCKS</h1>
 
     </div>
 
 
-    <div id="navigation">
+
+    <!-----This is for the navigation buttons----->
+    <div class='navigation'>
         <table>
             <tr>
-                <td>Ingredients</td>
-                <td>Intructions</td>
-                <td>Links</td>
+                <td><a href="#ingredients">Ingredients</a></td>
+                <td><a href="#instructions">Intructions</a></td>
+                <td><a href="#links">Links</a></td>
             </tr>
         </table>
     </div>
 
 
-    <!--For List of Ingredients-->
-    <div id="ingredients">
+
+    <!-----For List of Ingredients----->
+    <div id="ingredients" class="ingredients">
         <ul>
             <li>5 Tbsp. - Oatmeal (1-minute version 'cause nobody's got time to wait around)</li>
             <li>1 Tbsp. - Brown Sugar</li>
@@ -44,15 +43,13 @@
             <li>1 diced - Bananas (or is it Banannas?</li>
             <li>1 Tbsp. - Raisins (Yupp raisins, don't hate they're "gud")</li>
             <li>1 Cup - Water(Hot) or more depending what texture you want</li>
-
-
-
         </ul>
+    </div>
 
 
-        
-    <!--Cooking Instruction-->
-    </div id="instructions">
+
+    <!-----Intruction Block----->
+    <div id="instructions" class='instructions'>
         <ol>
             <li>Heat up the water (if you didn't follow my recipe list and got cold water SMH.</li>
             <li>Put your 5 tablespoon of oatmeal in a semi-large bowl (1-minute version please, 
@@ -62,21 +59,40 @@
                 (told you to get the 1-minute version LMAO)</li>
             <li>Enjoy it! Careful it's full of fiber.</li>
         </ol>
+    </div>
 
-    <div id="pictures">
+
+
+
+
+    
+
+    <div id ="pictures" class="pictures">
         <ul>
         <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F5477640.jpg&w=595&h=595&c=sc&poi=face&q=85" height=100 alt="A delicious bowl of oatmeal." align=""/>
         </ul>
     </div>
 
 
-    <div>
 
 
+
+    <div class="links">
+      <a href="https://www.starbucks.com/menu/product/301/single?parent=%2Ffood%2Fhot-breakfast%2Foatmeal"><strong>Starbucks Otmeal so you can just order it.</strong>
     </div>
 
 
-    <div>
+
+
+    <!--This will make a helpful countdown button-->
+    <div class='timer'>
+      <p>This is a helpful one minute timer for making the oatmeal.</p>
+      
+      <span id="count">60</span> seconds
+      <br>
+
+      <!--Creates a button that when clicked calls the start() function in script.js-->
+      <button onclick="start()">START</button>
     </div>
 
 
@@ -88,7 +104,7 @@
 
 
 
-
-
+  <!--Placing the JS script here are per best practice -->
+  <script src="script.js"></script>
   </body>
 </html>
