@@ -27,3 +27,6 @@ function start()
     document.getElementById("count").style="color:green;";
     startTimer();
 };
+
+
+//Will this change?
