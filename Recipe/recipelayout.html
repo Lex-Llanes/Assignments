@@ -52,13 +52,13 @@
         <div class="navigation">
 
               
-                <div class="links"><a href="#ingredients" style="text-decoration: none">Ingredients</a></div>
+                <div class="links"><a href="#ingredientsId" style="text-decoration: none">Ingredients</a></div>
 
-                <div class="links"><a href="#instructions" style="text-decoration: none">Intructions</a></div>
+                <div class="links"><a href="#instructionsID" style="text-decoration: none">Intructions</a></div>
 
-                <div class="links"><a href="#links" style="text-decoration: none">Links</a></div>
+                <div class="links"><a href="#linksId" style="text-decoration: none">Links</a></div>
               
-                <div class="links"><a href="#timer" style="text-decoration: none">Timer</a></a></div>
+                <div class="links"><a href="#timerId" style="text-decoration: none">Timer</a></a></div>
 
                 <div class="clearfix"> </div>
 
@@ -78,7 +78,8 @@
 
 
     <!-----INGREDIENTS----->
-    <div id="ingredients" class="ingredients">
+    <button onclick="hideIngredients()">Hide Ingredients</button>
+    <div id="ingredientsId" class="ingredients">
         <ul>
             <li>5 Tbsp. - Oatmeal (1-minute version 'cause nobody's got time to wait around)</li>
             <li>1 Tbsp. - Brown Sugar</li>
@@ -92,7 +93,8 @@
 
 
     <!-----INSTRUCTIONS----->
-    <div id="instructions" class='instructions'>
+      <button onclick="hideInstructions()">Hide Instructions</button>
+    <div id="instructionsID" class='instructions'>
         <ol>
             <li>Heat up the water (if you didn't follow my recipe list and got cold water SMH.</li>
             <li>Put your 5 tablespoon of oatmeal in a semi-large bowl (1-minute version please, 
@@ -110,7 +112,7 @@
 
     
 
-    <div id ="pictures" class="pictures">
+    <div class="pictures">
         <ul>
         <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F5477640.jpg&w=595&h=595&c=sc&poi=face&q=85" height=100 alt="A delicious bowl of oatmeal." align=""/>
         </ul>
@@ -120,7 +122,7 @@
 
 
 
-    <div class="linksList">
+    <div id="linksId" class="linksList">
       <a href="https://www.starbucks.com/menu/product/301/single?parent=%2Ffood%2Fhot-breakfast%2Foatmeal"><strong>Starbucks Otmeal so you can just order it.</strong></a>
     </div>
 
@@ -128,7 +130,7 @@
 
 
     <!--This will make a helpful countdown button-->
-    <div class="timer">
+    <div id="timerId" class="timer">
       <p>This is a helpful one minute timer for making the oatmeal.</p>
       
       <span id="count">60</span> seconds

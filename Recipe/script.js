@@ -22,11 +22,43 @@ function startTimer(){
 }
 
 //This function grabs the elemend with the id="count" and changes it to green, then after calls the startTimer() function.
+//Turns button Green
 function start()
 {
     document.getElementById("count").style="color:green;";
     startTimer();
 };
+
+
+
+
+
+
+
+
+
+function hideIngredients(){
+  let ingredientContent = document.getElementById("ingredientsId");
+
+  if(ingredientContent.style.visibility === 'visible'){
+    ingredientContent.style.visibility = 'hidden';
+  } else {
+    ingredientContent.style.visibility = 'visible';
+  }
+}
+
+function hideInstructions(){
+  let ingredientContent = document.getElementById("instructionsID");
+
+  if(ingredientContent.style.visibility === 'visible'){
+    ingredientContent.style.visibility = 'hidden';
+  } else {
+    ingredientContent.style.visibility = 'visible';
+  }
+}
+
+
+
 
 
 //Will this change?
