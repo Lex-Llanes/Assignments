@@ -5,7 +5,6 @@ body {
   height: 100%;
 }
 
-
 .title {
   background-image: url(https://thefirstmess.com/wp-content/uploads/2018/08/09-9882-post/vegan-creamiest-diy-instant-oatmeal-recipe-9.jpg);
   background-size: middle;
@@ -18,9 +17,6 @@ body {
   text-align:center;
 }
 
-
-
-/*-----Content Border-----*/
 .contentBorder {
   border: 5px solid rgb(216, 114, 24);
   height: 99%;
@@ -31,20 +27,6 @@ body {
 
 /*------------------------------------------*/
 /*Navigation Styling Below*/
-
-
-
-
-/*
-table {
-  height: 40%;
-  margin: 20px auto;
-  overflow-y: scroll;
-  position: static;
-  width: 80%;
-}
-*/
-
 .navigation {
   height: 30%;
   width: 100%;
