@@ -3,7 +3,6 @@ import { useState, useRef } from "react";
 import React from "react";
 
 const CoinFlip = () => {
-
     let [flip, setFlip] = useState(() => {
         return "" });
     let numCoins = useRef();
@@ -16,8 +15,6 @@ const CoinFlip = () => {
     function flipCoin () {
         const userGuess = userInputRef.current.value;
         let flip = Math.floor(Math.random() * 10);
-
-
 
         for(let i = numFlips; i <= numFlips; i++){
             if(flip % 2 == 0){
@@ -42,8 +39,6 @@ const CoinFlip = () => {
                     setUserWinLose(userWinLose = "4 You guessed Heads, and was wrong!")
                 }
             }
-
-
         }
     }
 
