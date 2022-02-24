@@ -4,7 +4,7 @@ const port = 8080
   
 const server = http.createServer(function (req, res) {
       res.write('Test')
-      rp('api.openweathermap.org/data/2.5/weather?lat=35&lon=139&appid=9c76e519b2c8bc3792e37dda0bf8ccab')
+      rp('api.openweathermap.org/data/2.5/weather?lat=35&lon=139&appid=')
     .then(function (htmlString) {
         const response = htmlSptring;
         // Process html...
