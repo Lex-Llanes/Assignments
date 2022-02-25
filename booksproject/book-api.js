@@ -9,35 +9,35 @@ const port = 3000;
 
 let books = [
 
-{ isbn: '9781593275846',
+{ isbn: '0786926759',
+title: 'Odyssey: Odyssey cycle - Book 1',
+author: 'Vance Moore',
+publish_date: '2001-09-01',
+publisher: 'Wizards of The Coast',
+numOfPages: '320' },
+
+{ isbn: '0786926961',
+title: 'Tormet: Odyssey cycle - Book 2',
+author: 'Scott McGough',
+publish_date: '2002-01-02',
+publisher: 'Wizards of The Coast',
+numOfPages: '320' },
+
+{ isbn: ' 0786927437',
+title: 'Judgement: Odyssey cycle - Book 2',
+author: 'Will McDermott',
+publish_date: '2002-05-01',
+publisher: 'Wizards of The Coast',
+numOfPages: '320' },
+
+{ isbn: '4',
 title: 'Eloquent JavaScript, Second Edition',
 author: 'Marijn Haverbeke',
 publish_date: '2014-12-14',
 publisher: 'No Starch Press',
 numOfPages: '472' },
 
-{ isbn: '9781593275846',
-title: 'Eloquent JavaScript, Second Edition',
-author: 'Marijn Haverbeke',
-publish_date: '2014-12-14',
-publisher: 'No Starch Press',
-numOfPages: '472' },
-
-{ isbn: '9781593275846',
-title: 'Eloquent JavaScript, Second Edition',
-author: 'Marijn Haverbeke',
-publish_date: '2014-12-14',
-publisher: 'No Starch Press',
-numOfPages: '472' },
-
-{ isbn: '9781593275846',
-title: 'Eloquent JavaScript, Second Edition',
-author: 'Marijn Haverbeke',
-publish_date: '2014-12-14',
-publisher: 'No Starch Press',
-numOfPages: '472' },
-
-{ isbn: '9781593275846',
+{ isbn: '5',
 title: 'Eloquent JavaScript, Second Edition',
 author: 'Marijn Haverbeke',
 publish_date: '2014-12-14',
@@ -49,13 +49,19 @@ numOfPages: '472' }
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+app.use(express.static('public'));
 
 
+
+// app.post('/book', (req, res) => { 
+//     res.sendFile( __dirname + "/" + "new-book.html" );
+// });
 
     app.post('/book', (req, res) => {
+        //res.sendFile( __dirname + "/" + "new-book.html" );
         //Encode book here
         const book = req.body;
-
+        
         //Console the books for debugging
         console.log(book);
         books.push(book);
