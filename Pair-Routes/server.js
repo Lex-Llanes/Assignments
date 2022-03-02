@@ -8,12 +8,6 @@ app.get('/', function (req, res) {
  })
 
 
-
-// app.get('/index', function (req, res) {
-//     res.send('Hello World');
-//  })
- 
-
  app.get('/about', function (req, res) {
     res.sendFile( __dirname + "/" + "about.html" );
  });
