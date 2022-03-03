@@ -1,11 +1,12 @@
-//import useRef ins order to make use of the <input>
+//import useRef in order to make use of the <input>
 import { useState, useRef } from "react";
 import React from "react";
 
 const CoinFlip = () => {
 
     let [flip, setFlip] = useState(() => {
-        return "" });
+        return ""; 
+    });
     const [numFlips, setNumFlips] = useState(1);
     const userInputRef = useRef();
     let [userWinLose, setUserWinLose] = useState("")
