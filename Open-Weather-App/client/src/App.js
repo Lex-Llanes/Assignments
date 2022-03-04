@@ -1,43 +1,41 @@
-import React from "react";
+import React, { useState, useEffect, useRef } from "react";
 import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  //const [data, setData] = React.useState(null);
-  // React.useEffect (() => {
-  //   fetch("/weather")
-  //     .then(res => res.json())
-  //     .then(data => setData(data.message))
-  // }, []);
+
+  const [currentUrl, setCurretnUrl] = useState("/weather")
+  const [weather, setWeather] = useState();
+  const [error, setError] = useState(null);
+  
+  
+  useEffect(() => {
+    fetch(currentUrl)
+      .then((response) => {
+        if(response.ok){
+          return response.json()
+        } else {
+          throw response
+        }
+      })
+      .then(setWeather)
+      .catch((error) => {
+        console.error("Something bad happened", error);
+        setError(error);
+      })
+      .finally(() => {
+      })
+  }, [currentUrl])
 
 
-  async function fetchWeather (){
-    const response = await fetch("/weather");
-    const data = await response.json()
-
-    return data;
-  }
-
-  async function arrayWeather () {
-    let dataToConvert = await fetchWeather();
-    let weatherArray = {};
-
-    for (const property in dataToConvert){
-      weatherArray.unshift(property)
-    }
-    return weatherArray;
-  }
-
-  const weatherData = arrayWeather();
-  console.log(weatherData)
-
+  
+console.log(weather)
 
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-        </p>
+        <span></span>
 
       </header>
     </div>
