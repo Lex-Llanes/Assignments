@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const express = require("express");
 var request = require("request");
 const PORT = process.env.PORT || 3001;
@@ -38,3 +39,20 @@ app.listen(PORT, () => {
 
 
 
+=======
+const express = require("express");
+
+const PORT = process.env.PORT || 3001;
+
+const app = express();
+
+app.get("/api", (req, res) => {
+    res.json({ message: "Hello from our server!" })
+})
+
+
+
+app.listen(PORT, () => {
+    console.log(`Server listening on ${PORT}`);
+})
+>>>>>>> parent of a71a351 (Submitting)
